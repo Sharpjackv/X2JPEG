@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X2JPEG</title>
+    <link rel="stylesheet" type="text/css" href="needle.css">
+</head>
+<body id = "body">
+    <div id = "pausescreen" style="visibility: hidden;">Paused</div>
+    <img id="pause" src="pause.svg" draggable="false"></img>
+
+    <div id="streamcontainer">
+        <img id="stream" alt="Streamed Image" draggable="false" />
+
+        <canvas id="canvastream" width="1280" height="720"></canvas>
+    </div>
+
+    <div id="statcontainer">
+        <div id = "fps"></div>
+        <div id = "bandwith"></div>
+        <div id = "avgimage"></div>
+        <div id = "dfps"></div>
+        <div id = "domtime"></div>
+    </div>
+
+
+
+
+    <div id="menutab"></div>
+    <div id="menu" class="move-backbox">
+        <div id="menubar"></div>
+
+        <div class="line"></div>
+        <div class="divtext">Live stream</div>
+
+        <div class="menucontainer">
+            <div class="menutext">Capture FPS</div> 
+            <div class="menui">
+                <input id="FPSfield" class="menuinput" type="text">
+                <div class="menubutton" id="FPSbutton">Apply</div>
+            </div>
+        </div>
+
+
+
+        <div class="menucontainer">
+            <div class="menutext">Target Image Size (KB)</div> 
+            <div class="menui">
+                <input id="Qualityfield" class="menuinput" type="text">
+                <div class="menubutton" id="Qualitybutton">Apply</div>
+            </div>
+        </div>
+
+
+
+            
+        <div class="line"></div>
+        <div class="divtext">Compression</div>
+        <div class="menubutton" id="Qualitytoggle">Compression : On</div>
+
+
+
+
+        <div class="line"></div>
+        <div class="divtext">Rendering</div>
+
+        <div class="menubutton" id="Canvasrendertoggle">Canvas : Off</div>
+
+
+
+        <div class="line"></div>
+        <div class="divtext">Controls</div>
+
+         <div class="menubutton" id="Controlbutton">Keybind : Off</div>
+
+         <div class="line"></div>
+        <div class="divtext"><a href="cornifer.html">Documentation</a></div>
+
+
+    </div>
+
+
+
+    <script src="silk.js"></script>
+</body>
+</html>
