@@ -1,0 +1,267 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    user-select: none;
+    font-family: "Rajdhani", sans-serif;
+}
+
+#pausescreen{
+    visibility:hidden;
+    color: #f0f8ff;
+    background-color: rgba(0, 0, 0, 0.556);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+
+}
+
+#statcontainer{
+  color: #f0f8ff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+#stream {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  left: 50%;
+  position: absolute;
+  z-index: -20;
+  transform: translate(-50%, 0);
+}
+
+
+#streamcontainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+#canvastream{
+  height: 100%;
+  left: 50%;
+  width: auto;
+  position: absolute;
+  z-index: -19;
+  transform: translate(-50%, 0);
+}
+
+#pause {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%) sepia(94%) saturate(2606%) hue-rotate(179deg) brightness(102%) contrast(123%);
+}
+
+#menutab {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    height: 80px;
+    width: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#menu {
+    position: absolute;
+    top: 25%;
+    height: auto;
+    width: 250px;
+    background-color: #808688;
+    transition: width 0.3s;
+    overflow: hidden;
+    border-color: white;
+    border-style: solid;
+    border-top: 0px;
+    border-width:2px;
+    transform: translateX(-250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#menubar {
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.line{
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.divtext{
+  width: 90%;
+  margin-bottom: 2px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.menutext {
+    font-size: 18px;
+    text-align: center;
+    color: #e2e2e2;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 200px;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.menubutton{
+  text-align: center;
+    padding-top:none ;
+    height: 14px;
+    font-size: 12px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 4px;
+    border-color: #373e43;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #a6acb0;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+.menubutton:hover{
+  text-align: center;
+    padding-top:none ;
+    height: 14px;
+    font-size: 12px;
+    width: 102px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 4px;
+    border-color: #373e43;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #8a8f92;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menubutton:active{
+    font-size: 11px;
+}
+
+.menuinput{
+  text-align: center;
+    width: 100px;
+    height: 18px;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.menucontainer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menui{
+  display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0 20px;
+
+}
+
+.qualitymenucontainer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.move-right {
+    animation: moveRight 0.3s forwards;
+  }
+  
+  .move-back {
+    animation: moveBack 0.3s forwards;
+  }
+  
+  @keyframes moveRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(262px);
+    }
+  }
+  
+  @keyframes moveBack {
+    from {
+      transform: translateX(262px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes moveRightBOX {
+    from {
+      transform: translateX(-262px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes moveBackBOX {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-262px);
+    }
+  }
+
+  .move-rightbox {
+    animation: moveRightBOX 0.3s forwards;
+  }
+  
+  .move-backbox {
+    animation: moveBackBOX 0.3s forwards;
+  }
