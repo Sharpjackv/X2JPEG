@@ -16,7 +16,7 @@ Cons :
   &nbsp;&nbsp;&nbsp;&nbsp;Lower image quality at similiar bandwith than other options  
   &nbsp;&nbsp;&nbsp;&nbsp;Poor at displaying lots of small text  
 
-Dependencies :
+Dependencies :  
   &nbsp;&nbsp;&nbsp;&nbsp;OpenCV \~ libopencv-dev  
   &nbsp;&nbsp;&nbsp;&nbsp;X11 Libraries \~ libx11-dev  
   &nbsp;&nbsp;&nbsp;&nbsp;XTest Extension \~ libxtst-dev  
