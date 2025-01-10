@@ -15,3 +15,20 @@ Cons :
   &nbsp;&nbsp;&nbsp;&nbsp;Increased bandwith usage  
   &nbsp;&nbsp;&nbsp;&nbsp;Lower image quality at similiar bandwith than other options  
   &nbsp;&nbsp;&nbsp;&nbsp;Poor at displaying lots of small text  
+
+Dependencies :
+  &nbsp;&nbsp;&nbsp;&nbsp;OpenCV ~ libopencv-dev
+  &nbsp;&nbsp;&nbsp;&nbsp;X11 Libraries ~ libx11-dev
+  &nbsp;&nbsp;&nbsp;&nbsp;XTest Extension ~ libxtst-dev
+  &nbsp;&nbsp;&nbsp;&nbsp;XFixes Extension ~ libxfixes-dev
+  &nbsp;&nbsp;&nbsp;&nbsp;WebSocket++ ~ libwebsocketpp-dev
+  &nbsp;&nbsp;&nbsp;&nbsp;Asio Library ~ libasio-dev
+
+Build Instructions :
+```
+  cd server
+  mkdir build
+  cd build
+  cmake ..
+  make
+```
